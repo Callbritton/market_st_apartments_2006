@@ -13,4 +13,11 @@ class BuildingTest < Minitest::Test
     assert_instance_of Building, building
   end
 
-end 
+  def test_units_start_empty
+
+    building = Building.new
+
+    assert_equal [], building.units
+  end 
+
+end
